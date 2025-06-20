@@ -9,9 +9,9 @@ module_UI <- function(id) {
   # -- namespace
   ns <- NS(id)
 
-  # -- text input
-  textInput(inputId = ns("text"),
-            label = "Module server input",
-            value = "")
+  # -- input
+  numericInput(inputId = ns("numeric"),
+               label = "Module server input",
+               value = 0)
 
 }

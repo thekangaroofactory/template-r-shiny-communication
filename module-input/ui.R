@@ -26,11 +26,6 @@ page_navbar(
   nav_panel(title = "Main Server",
             class = "p-5",
 
-            # -- main server input
-            numericInput(inputId = "number",
-                         label = "Server input",
-                         value = 0),
-
             # -- module input
             module_UI("module")
 

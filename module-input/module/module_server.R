@@ -10,7 +10,7 @@ module_server <- function(id) {
     # -- get namespace
     ns <- session$ns
 
-    observeEvent(input$text,
+    observeEvent(input,
                  cat("Input(s) seen by the module server:", paste(names(input), collapse = " / "), "\n"))
 
   })
