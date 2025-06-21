@@ -8,7 +8,7 @@
 function(input, output, session) {
 
   # -- launch module server
-  module <- module_server(id = "module")
+  module_server(id = "module")
 
   # -- check outputs
   outs <- outputOptions(output)
