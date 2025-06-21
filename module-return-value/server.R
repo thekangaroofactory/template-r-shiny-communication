@@ -14,6 +14,4 @@ function(input, output, session) {
   observeEvent(rv(),
                cat("Module return value =", rv(), "\n"))
 
-  observeEvent(input$'module-numeric', cat("xxxx"))
-
 }
