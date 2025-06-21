@@ -7,8 +7,11 @@
 # -- Define server function
 function(input, output, session) {
 
+  # -- declare trigger
+  my_trigger <- reactiveVal(NULL)
+
   # -- launch module server
-  module <- module_server(id = "module")
+  module <- module_server(id = "module", trigger = my_trigger)
 
 
   # ----------------------------------------------------------------------------
@@ -33,7 +36,7 @@ function(input, output, session) {
 
   # -- observe button
   observeEvent(input$action_btn,
-               module$action("myvalue"))
+               my_trigger(paste0("my_trigger_", input$action_btn)))
 
 
 
