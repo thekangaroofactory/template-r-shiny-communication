@@ -10,7 +10,7 @@
 #' module_server(id = "module", trigger = reactive())
 
 
-module_server <- function(id, trigger = NULL, debug = FALSE) {
+module_server <- function(id, trigger, debug = FALSE) {
   moduleServer(id, function(input, output, session) {
 
     # -- check parameter:
